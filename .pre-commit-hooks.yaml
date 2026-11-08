@@ -1,0 +1,6 @@
+- id: credscan
+  name: credscan
+  description: Block commits that contain API keys, tokens, or passwords.
+  entry: credscan
+  language: python
+  pass_filenames: true

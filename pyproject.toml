@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "credential-leak-scanner"
+version = "1.0.0"
+description = "Find leaked API keys, tokens, and passwords in code and git history before they reach a remote."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+credscan = "credscan.cli:main"
+
+[tool.setuptools]
+packages = ["credscan"]
